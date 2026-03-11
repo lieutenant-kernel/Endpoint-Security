@@ -1,0 +1,13 @@
+A simple PHP-website for file uploads without security measures. Rewuirements:
+- upload.php must be owned by www-data
+- /etc/php/<VERSION>/apache2/php.ini needs to have uploads activated
+
+Additional CTF:
+- Host upload.php on a Webserver (LAMP-Stack)
+- "Hide" a file named "capture_me" with the flag-ID somewhere in /var/www-Folder
+- Students have to
+  - Configure php-Shell file to their attacker machine
+  - Upload the shell.php
+  - Start a listener on their attacker machine
+  - Establish a reverse shell by GET shell.php
+  - Find the flag: find / -type f -name "capture_me" 2>/dev/null
