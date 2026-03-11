@@ -1,5 +1,6 @@
-A simple PHP-website for file uploads without security measures. Rewuirements:
+A simple PHP-website for file uploads without security measures. Requirements:
 - upload.php must be owned by www-data
+  - chown www-data:www-data upload.php
 - /etc/php/<VERSION>/apache2/php.ini needs to have uploads activated
 
 Additional CTF:
