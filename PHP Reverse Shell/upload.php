@@ -1,5 +1,7 @@
 <?php
 
+//This is an upload page without any security measures. You can use it to upload virtually anything (like a php-reverse shell for example) 
+
 $dir = __DIR__;
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -92,9 +94,11 @@ function upload(files){
 
 let form = new FormData()
 
+/*
 for(let f of files){
 form.append("files[]",f)
 }
+*/
 
 let xhr = new XMLHttpRequest()
 
