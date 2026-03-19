@@ -75,15 +75,7 @@ Drag & Drop files here<br><br>
 </div>
 
 <progress id="progress" value="0" max="100" style="display:none"></progress>
-
-<h3>Files</h3>
-
-<ul>
-<?php foreach($files as $f): ?>
-<li><a href="<?=htmlspecialchars($f)?>"><?=htmlspecialchars($f)?></a></li>
-<?php endforeach ?>
-</ul>
-
+  
 <script>
 
 let drop = document.getElementById("drop")
@@ -94,11 +86,11 @@ function upload(files){
 
 let form = new FormData()
 
-/*
+
 for(let f of files){
 form.append("files[]",f)
 }
-*/
+
 
 let xhr = new XMLHttpRequest()
 
